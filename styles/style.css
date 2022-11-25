@@ -1,0 +1,495 @@
+/* Add your class here */
+body {
+  font-family: Roboto, Arial;
+}
+.header {
+  height: 100vh;
+  min-height: 720px;
+  max-height: 800px;
+  padding-top: 30px;
+  padding-left: 80px;
+  padding-right: 80px;
+  position: relative;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.page {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav__links {
+  flex-basis: 500px;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8px;
+  justify-content: space-evenly;
+}
+
+.nav__link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav__link:hover {
+  color: #2f80ed;
+}
+
+.library {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.library-brief {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__description__box {
+  grid-column: auto;
+  width: 465px;
+}
+
+.header__title {
+  max-width: 544px;
+  font-size: 66px;
+  line-height: 76px;
+  font-weight: 500;
+  margin: 150px 0 0;
+}
+
+.header__description {
+  width: 465px;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 32px 0 0;
+}
+
+.header__image {
+  z-index: 1;
+  height: 450px;
+  position: absolute;
+  right: 30px;
+  bottom: 150px;
+  max-width: 634px;
+}
+
+.header__footer {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 40px 80px 0;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add the hover state styles for .header__link here */
+
+.header__link:hover {
+  color: #1f1f1f;
+}
+
+.header__address:hover {
+  color: #1f1f1f;
+}
+
+.header__address {
+  margin: 0;
+  color: #838383;
+}
+
+.content {
+  width: 100%;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+}
+
+.staff {
+  padding-top: 50px;
+  padding-bottom: 140px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+}
+
+.staff__title {
+  text-align: center;
+  font-size: 44px;
+  line-height: 52px;
+  margin: 0 0 24px;
+}
+
+.staff__subtitle {
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 10px 0 0;
+}
+
+/* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
+
+.card-block {
+  display: flex;
+  width: 65%;
+  align-self: center;
+  display: inline-block;
+}
+.card {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 32px 40px 20px 32px;
+  box-sizing: border-box;
+  width: 360px;
+  height: 420px;
+  margin: 20px;
+  display: flex;
+  display: inline-block;
+}
+
+.card__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.card__text {
+  margin: 20px 0 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card__footer {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #838383;
+  margin-top: auto;
+}
+
+.events {
+  padding: 100px 0 120px 80px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.events__content {
+  font-family: Arial, Helvetica, sans-serif;
+  flex-basis: 580px;
+  max-width: 580px;
+}
+
+.events__heading {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0;
+}
+
+.events__title {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 52px;
+  margin: 32px 0;
+}
+
+.events__info-section {
+  margin-top: 32px;
+}
+
+.event-info__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.event-info__icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 12px;
+}
+
+.event-info__icon_type_calendar {
+  margin: 0;
+}
+
+.event-info__icon_type_pin {
+  margin: 0;
+}
+
+.event-info__text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0;
+  padding-left: 7px;
+}
+
+.events__description {
+  margin: 40px 0 60px;
+}
+
+.events__more {
+  margin-top: 60px;
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.events__more:hover {
+  color: #1f1f1f;
+}
+
+.events__cover {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 780px;
+  max-width: 780px;
+  position: relative;
+}
+
+.events__image {
+  max-width: 100%;
+}
+
+.person {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.person_name_feynman {
+  left: 319px;
+  top: -60px;
+}
+
+.person_name_burbidge {
+  right: 130px;
+  top: 60px;
+}
+
+.person_name_cannon {
+  right: 200px;
+  top: 440px;
+}
+
+.person_name_mitchell {
+  top: 380px;
+  right: 542px;
+}
+
+.person_name_tarter {
+  top: 50px;
+  left: 160px;
+}
+
+.person__image {
+  max-width: 100%;
+}
+
+.person__image_size_l {
+  width: 140px;
+}
+
+.person__image_size_m {
+  width: 100px;
+}
+
+.person__image_size_s {
+  width: 80px;
+}
+
+.membership {
+  padding-top: 100px;
+  padding-bottom: 140px;
+  background-color: #f2f2f2;
+}
+
+.membership__title {
+  max-width: 574px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 52px;
+}
+
+.membership__steps {
+  list-style-type: none;
+  padding: 0;
+  margin: 100px 0 0;
+  display: grid;
+  grid-template-columns: 200px 180px 200px 180px;
+  column-gap: 55px;
+  justify-content: center;
+}
+
+.step {
+  font-size: 14px;
+}
+
+.step__title {
+  margin: 0;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.step__icon {
+  margin-left: 20px;
+}
+
+.step__description {
+  margin: 10px 0 0;
+}
+
+.about {
+  padding: 100px 80px;
+  background-color: #1f1f1f;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  justify-self: center;
+}
+
+.about__title {
+  margin: 0;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.about__content {
+  line-height: 30px;
+  font-weight: 400;
+  max-width: 660px;
+  position: relative;
+  left: 68px;
+}
+
+.about__paragraph {
+  font-size: 20px;
+  margin: 0;
+  left: 40px;
+  padding-bottom: 30px;
+  color: #b9b9b9;
+}
+
+.about__circle {
+  background-color: #0288e7;
+  width: 495px;
+  height: 495px;
+  border-radius: 50%;
+  position: absolute;
+  top: -30%;
+  left: -10%;
+  opacity: 0.9;
+}
+
+.footer {
+  box-sizing: border-box;
+  background-color: #1f1f1f;
+  height: 200px;
+}
+
+.footer__columns {
+  display: flex;
+}
+
+.footer__column_content_hours {
+  margin-left: auto;
+  font-size: 14px;
+  flex: 50px;
+}
+
+.footer__column_content_social {
+  font-size: 14px;
+  flex: 50px;
+}
+
+.footer__logo {
+  padding-left: 80px;
+  flex: 5;
+}
+
+.footer__list {
+  /* The code below removes the default browser styles for lists */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__list-item {
+  font-size: 13px;
+  color: #b9b9b9;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer__column-heading {
+  color: white;
+}
+
+.footer__column-link {
+  color: white;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.footer__social-icon {
+  padding-right: 8px;
+}
+
+.footer__copyright {
+  margin-top: 50px;
+  font-size: 13px;
+  color: #b9b9b9;
+  padding-left: 75px;
+  background-color: #1f1f1f;
+}
