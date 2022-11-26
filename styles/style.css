@@ -87,8 +87,8 @@ body {
   z-index: 1;
   height: 450px;
   position: absolute;
-  right: 30px;
-  bottom: 150px;
+  right: 20px;
+  top:125px;
   max-width: 634px;
 }
 
@@ -359,13 +359,13 @@ body {
   padding: 0;
   margin: 100px 0 0;
   display: grid;
-  grid-template-columns: 200px 180px 200px 180px;
-  column-gap: 55px;
+  grid-template-columns: 220px 220px 220px 220px;
+  column-gap: 40px;
   justify-content: center;
 }
 
 .step {
-  font-size: 14px;
+  font-size: 17px;
 }
 
 .step__title {
@@ -409,15 +409,15 @@ body {
   font-weight: 400;
   max-width: 660px;
   position: relative;
-  left: 68px;
+  left: 120px;
+  z-index: 1;
 }
-
 
 .about__paragraph {
   font-size: 20px;
   margin: 0;
   left: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
   color: #b9b9b9;
 }
 
@@ -427,9 +427,9 @@ body {
   height: 495px;
   border-radius: 50%;
   position: absolute;
-  top: -30%;
-  left: -10%;
-  opacity: 0.9;
+  top: -23%;
+  left: -7%;
+  z-index: 0;
 }
 
 .footer {
@@ -451,6 +451,8 @@ body {
 .footer__column_content_social {
   font-size: 14px;
   flex: 50px;
+  padding-left: 100px;
+  padding-right: 103px;
 }
 
 .footer__logo {
