@@ -1,7 +1,4 @@
 /* Add your class here */
-body {
-  font-family: Arial;
-}
 .header {
   height: 100vh;
   min-height: 720px;
@@ -17,14 +14,15 @@ body {
 .page {
   min-width: 1100px;
   max-width: 1600px;
+  font-family: Helvetica;
+  font-size: 14px;
+  line-height: 20px;
   margin: 0 auto;
 }
 
 .nav {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  margin: auto;
   justify-content: space-between;
 }
 
