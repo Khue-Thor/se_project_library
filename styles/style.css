@@ -22,21 +22,22 @@
 
 .nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
 }
 
 .logo {
-  height: 50px;
+  max-width: 196;
+  max-height: 60px;
 }
 
 .nav__links {
-  flex-basis: 500px;
   display: flex;
   list-style: none;
   padding-left: 0;
   margin-top: 8px;
   justify-content: space-evenly;
+  column-gap: 20px;
 }
 
 .nav__link {
@@ -47,7 +48,7 @@
 }
 
 .nav__link:hover {
-  color: #2f80ed;
+  color: #1f69c9;
 }
 
 .header__description__box {
