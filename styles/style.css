@@ -51,11 +51,6 @@
   color: #1f69c9;
 }
 
-.header__description__box {
-  grid-column: auto;
-  width: 465px;
-}
-
 .header__title {
   max-width: 544px;
   font-size: 66px;
