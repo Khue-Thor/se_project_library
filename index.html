@@ -62,7 +62,7 @@
           <h2 class="staff__title">Staff picks</h2>
           <p class="staff__subtitle">That our readers love</p>
           <!-- The ul tag (unordered list) is used here as it is a collection of cards for which the order doesn't really matter. -->
-          <ul class="card-block">
+          <ul class="staff__cards">
             <li class="card">
               <div class="card__content">
                 <h3 class="card__title">Introduction to Algorithms</h3>
@@ -143,51 +143,27 @@
               <div class="event-info__item">
                 <div
                   class="event-info__icon event-info__icon_type_calendar"
-                ></div>
-                <svg
-                  width="24"
-                  height="24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path
-                    d="M19 4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zM16 2v4M8 2v4M3 10h18"
-                    stroke="#252525"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+                  <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zM16 2v4M8 2v4M3 10h18" stroke="#252525"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
                 <p class="event-info__text">Mon, January 12</p>
               </div>
               <div class="event-info__item">
-                <div class="event-info__icon event-info__icon_type_pin"></div>
-                <svg
-                  width="24"
-                  height="24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <div
+                  class="event-info__icon event-info__icon_type_pin"
                 >
-                  <path
-                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"
-                    stroke="#252525"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
-                    stroke="#252525"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <p class="event-info__text">
-                  Practicum Library Conference Hall & Online
-                </p>
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z" stroke="#252525" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" stroke="#252525" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <p class="event-info__text">Practicum Library Conference Hall & online</p>
               </div>
-            </div>
+
+
+             </div>
             <p class="events__description">
               At this event, which celebrates the library's namesake, our guest
               lecturer will take us on a journey exploring some of the most
@@ -335,8 +311,8 @@
       </main>
       <footer class="footer" id="footer">
         <div class="footer__columns">
-          <div class="footer__column footer__logo">
-            <img src="./images/logo_practicum.svg" alt="clone_practicum_logo" />
+          <div class="footer__column ">
+            <img src="./images/logo_practicum.svg"  class="footer__logo" alt="clone_practicum_logo" />
           </div>
           <div class="footer__column footer__column_content_hours">
             <!-- Put your footer__column-heading and footer__list with the Hours here -->
@@ -370,7 +346,6 @@
           </div>
         </div>
         <p class="footer__copyright">&#169; 2022 Khuephamy Phialouang</p>
-
       </footer>
     </div>
   </body>

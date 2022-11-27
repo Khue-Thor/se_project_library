@@ -14,7 +14,7 @@
 .page {
   min-width: 1100px;
   max-width: 1600px;
-  font-family: Helvetica;
+  font-family: Helvetica, Arial;
   font-size: 14px;
   line-height: 20px;
   margin: 0 auto;
@@ -132,27 +132,28 @@
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
-  margin: 10px 0 0;
+  margin: 24px 0 0;
 }
 
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
 
-.card-block {
+.staff__cards {
   display: flex;
-  max-width: 360px;
-  height: 420px;
-  display: inline;
+  max-width: 760px;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 60px auto;
+  gap: 40px;
+
 }
 .card {
   background-color: #fff;
   border-radius: 6px;
-  padding: 0 40px 20px 32px;
+  padding: 32px 40px 20px 32px;
   box-sizing: border-box;
   width: 360px;
   height: 420px;
-  margin: 20px;
-  display: flex;
-  display: inline-block;
+
 }
 
 .card__content {
@@ -192,9 +193,7 @@
 }
 
 .events__content {
-  font-family: Arial, Helvetica, sans-serif;
   flex-basis: 580px;
-  max-width: 580px;
 }
 
 .events__heading {
@@ -224,16 +223,16 @@
 
 .event-info__icon {
   background-repeat: no-repeat;
-  background-position: center;
+  background-position:center;
   margin-right: 12px;
 }
 
 .event-info__icon_type_calendar {
-  margin: 0;
+  margin-right: 10px;
 }
 
 .event-info__icon_type_pin {
-  margin: 0;
+  margin-right: 10px;
 }
 
 .event-info__text {
@@ -241,7 +240,6 @@
   font-weight: 500;
   line-height: 30px;
   margin: 0;
-  padding-left: 7px;
 }
 
 .events__description {
@@ -306,6 +304,9 @@
 .person__image {
   max-width: 100%;
 }
+.person__caption {
+  font-size: 16px;
+}
 
 .person__image_size_l {
   width: 140px;
@@ -338,14 +339,13 @@
   list-style-type: none;
   padding: 0;
   margin: 100px 0 0;
-  display: grid;
-  grid-template-columns: 220px 220px 220px 220px;
+  display: flex;
   column-gap: 40px;
   justify-content: center;
 }
 
 .step {
-  font-size: 17px;
+  flex-basis: 220px;
 }
 
 .step__title {
@@ -388,17 +388,19 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
-  position: relative;
-  left: 120px;
+  margin-left: 120px;
   z-index: 1;
 }
 
 .about__paragraph {
   font-size: 20px;
   margin: 0;
-  left: 40px;
   padding-bottom: 32px;
-  color: #b9b9b9;
+  color: #c1c1c1;
+}
+
+.about__paragraph:last-of-type {
+  padding-bottom:0px;
 }
 
 .about__circle {
@@ -407,37 +409,34 @@
   height: 495px;
   border-radius: 50%;
   position: absolute;
-  top: -23%;
-  left: -7%;
+  top: -121px;
+  left: -91px;
   z-index: 0;
 }
 
 .footer {
   box-sizing: border-box;
   background-color: #1f1f1f;
-  height: 200px;
+  padding: 60px 80px 60px 80px;
 }
 
 .footer__columns {
   display: flex;
+  min-height: 224px;
 }
 
 .footer__column_content_hours {
   margin-left: auto;
-  font-size: 14px;
-  flex: 50px;
+
 }
 
 .footer__column_content_social {
-  font-size: 14px;
-  flex: 50px;
-  padding-left: 100px;
-  padding-right: 103px;
+margin-left: 100px;
 }
 
 .footer__logo {
-  padding-left: 80px;
-  flex: 5;
+  width: 116px;
+  height: 21px;
 }
 
 .footer__list {
@@ -448,11 +447,11 @@
 }
 
 .footer__list-item {
-  font-size: 13px;
-  color: #b9b9b9;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+  color: #f2f2f2;
+  margin-bottom: 16px;
+}
+.footer__list-item:last-of-type {
+  margin-bottom: 0px;
 }
 
 .footer__column-heading {
@@ -461,18 +460,21 @@
 
 .footer__column-link {
   color: white;
+  font-size: 16px;
   line-height: 20px;
   text-decoration: none;
 }
 
+.footer__column-link:hover {
+  color: c1c1c1;
+}
+
 .footer__social-icon {
   padding-right: 8px;
+  width: 16px;
+  height: 16px;
 }
 
 .footer__copyright {
-  margin-top: 50px;
-  font-size: 13px;
-  color: #b9b9b9;
-  padding-left: 75px;
-  background-color: #1f1f1f;
+  color: #f2f2f2
 }
