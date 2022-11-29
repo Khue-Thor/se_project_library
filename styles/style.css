@@ -14,7 +14,7 @@
 .page {
   min-width: 1100px;
   max-width: 1600px;
-  font-family: Helvetica, Arial;
+  font-family: Helvetica Neue, Arial, 'Inter', sans-serif;
   font-size: 14px;
   line-height: 20px;
   margin: 0 auto;
@@ -27,7 +27,7 @@
 }
 
 .logo {
-  max-width: 196;
+  max-width: 196px;
   max-height: 60px;
 }
 
@@ -98,10 +98,6 @@
   color: #1f69c9;
 }
 
-.header__address:hover {
-  color: #1f69c9;
-}
-
 .header__address {
   margin: 0;
   color: #838383;
@@ -118,6 +114,7 @@
   padding-top: 100px;
   padding-bottom: 140px;
   background-color: #f2f2f2;
+
 }
 
 .staff__title {
@@ -133,16 +130,18 @@
   line-height: 30px;
   font-weight: 400;
   margin: 24px 0 0;
+
 }
 
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
 
 .staff__cards {
+  padding: 0;
   display: flex;
   max-width: 760px;
   list-style: none;
   flex-wrap: wrap;
-  margin: 60px auto;
+  margin: 68px auto;
   gap: 40px;
 
 }
@@ -228,6 +227,7 @@
 }
 
 .event-info__icon_type_calendar {
+  background-image: url('../images/icon_calendar.svg');
   margin-right: 10px;
 }
 
@@ -253,7 +253,7 @@
 }
 
 .events__more:hover {
-  color: #1f1f1f;
+  color: #1f69c9;
 }
 
 .events__cover {
@@ -278,34 +278,35 @@
 
 .person_name_feynman {
   left: 319px;
-  top: -60px;
+  top: -30px;
 }
 
 .person_name_burbidge {
-  right: 130px;
-  top: 60px;
+  right: 125px;
+  top: 90px;
 }
 
 .person_name_cannon {
-  right: 200px;
-  top: 440px;
+  right: 216px;
+  bottom: 18px;
 }
 
 .person_name_mitchell {
-  top: 380px;
-  right: 542px;
+  bottom: 82px;
+  left: 142px;
 }
 
 .person_name_tarter {
-  top: 50px;
-  left: 160px;
+  top: 79px;
+  left: 159px;
 }
 
 .person__image {
   max-width: 100%;
 }
 .person__caption {
-  font-size: 16px;
+  margin: 0;
+  font-size: 14px;
 }
 
 .person__image_size_l {
@@ -396,7 +397,7 @@
   font-size: 20px;
   margin: 0;
   padding-bottom: 32px;
-  color: #c1c1c1;
+  color: #fff;
 }
 
 .about__paragraph:last-of-type {
@@ -404,7 +405,7 @@
 }
 
 .about__circle {
-  background-color: #0288e7;
+  background-color: #2f80ed;
   width: 495px;
   height: 495px;
   border-radius: 50%;
@@ -447,7 +448,7 @@ margin-left: 100px;
 }
 
 .footer__list-item {
-  color: #f2f2f2;
+  color: #fff;
   margin-bottom: 16px;
 }
 .footer__list-item:last-of-type {
@@ -456,17 +457,19 @@ margin-left: 100px;
 
 .footer__column-heading {
   color: white;
+  margin-bottom: 20pxs;
+  font-size: 16px;
 }
 
 .footer__column-link {
-  color: white;
+  color: #c1c1c1;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
 }
 
 .footer__column-link:hover {
-  color: c1c1c1;
+  color: #c1c1c1;
 }
 
 .footer__social-icon {
@@ -476,5 +479,6 @@ margin-left: 100px;
 }
 
 .footer__copyright {
-  color: #f2f2f2
+  color: #fff;
+  margin: 0;
 }
