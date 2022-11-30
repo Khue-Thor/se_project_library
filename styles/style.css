@@ -222,24 +222,23 @@
 
 .event-info__icon {
   background-repeat: no-repeat;
-  background-position:center;
+  background-position:left;
   margin-right: 12px;
 }
 
 .event-info__icon_type_calendar {
-  background-image: url('../images/icon_calendar.svg');
-  margin-right: 10px;
+  background-image: url(../images/icon_calendar.svg);
 }
 
 .event-info__icon_type_pin {
-  margin-right: 10px;
+  background-image: url(../images/icon_pin.svg);
 }
 
 .event-info__text {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 30px;
-  margin: 0;
+  margin: 0px 0px 0px 30px;
 }
 
 .events__description {
