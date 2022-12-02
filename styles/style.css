@@ -15,7 +15,7 @@
   min-width: 1100px;
   max-width: 1600px;
   font-family: Helvetica Neue, Arial, 'Inter', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   margin: 0 auto;
 }
@@ -141,7 +141,7 @@
   max-width: 760px;
   list-style: none;
   flex-wrap: wrap;
-  margin: 68px auto;
+  margin: 68px auto 0;
   gap: 40px;
 
 }
@@ -228,19 +228,18 @@
 
 .event-info__icon_type_calendar {
   background-image: url(../images/icon_calendar.svg);
-  background-position:left;
 }
 
 .event-info__icon_type_pin {
   background-image: url(../images/icon_pin.svg);
-  background-position:left;
 }
 
 .event-info__text {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 30px;
-  margin: 0px 0px 0px 30px;
+  margin: 0;
+  background-color: #1f69c9;
 }
 
 .events__description {
@@ -458,12 +457,13 @@ margin-left: 100px;
 
 .footer__column-heading {
   color: white;
-  margin-bottom: 20pxs;
+  margin-bottom: 20px;
+  margin-top: 0;
   font-size: 16px;
 }
 
 .footer__column-link {
-  color: #c1c1c1;
+  color: #fff;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
