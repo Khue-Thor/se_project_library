@@ -228,10 +228,14 @@
 
 .event-info__icon_type_calendar {
   background-image: url(../images/icon_calendar.svg);
+  width: 24px;
+  height: 24px;
 }
 
 .event-info__icon_type_pin {
   background-image: url(../images/icon_pin.svg);
+  width: 24px;
+  height: 24px;
 }
 
 .event-info__text {
@@ -239,7 +243,7 @@
   font-weight: 500;
   line-height: 30px;
   margin: 0;
-  background-color: #1f69c9;
+  background-color:#fff;
 }
 
 .events__description {
